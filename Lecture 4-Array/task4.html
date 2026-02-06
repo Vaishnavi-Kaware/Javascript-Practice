@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Reverse the array without using reverse mathod
+
+    let l=[1,55,66,8]
+    let finalArray=[]
+    for(let v of l){
+      finalArray.unshift(v)
+      
+      
+    }
+
+console.log(finalArray);
+
+//finalArray=[1]
+//finalArray=[55,1]
+//finalArray=[66,55,1]
+//finalArray=[8,66,55,1]
+
+for(let i=l.length; i>=0; i--){
+console.log(l[i]);
+
+}
+
+let t=l.length
+let newArray=[]
+for(let i=t-1; i>=0; i--){
+  newArray.push(l[i])
+}
+console.log(newArray);
+
+
+  </script>
+  
+</body>
+</html>

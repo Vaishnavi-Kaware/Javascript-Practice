@@ -8,6 +8,32 @@
 <body>
   <script>
     document.write("Welcome")
+    //Find Duplicates element
+    let l=[1,2,3,4,1,5,3,6,9]
+    console.log(l);
+    
+    let finalArray=[]
+    for(let v of l)
+  {
+    if(!(finalArray.includes(v)))
+    finalArray.push(v)
+    
+  }
+console.log(finalArray);
+
+//round 1  [].includes(1)=> ! false=true finalArray[1]
+//round 2  [1].includes(2)=>! false=true finalArray[1,2]
+//round 3  [1,2].includes(3)=>! false=true finalArray[1,2,3]
+//round 4  [1,2,3].includes(4)=>! false=true finalArray[1,2,3,4]
+
+//round 5  [1,2,3,4].includes(1)=>! true=false finalArray[1,2,3,4] 
+//round 5  [1,2,3,4].includes(5)=>! false=true finalArray[1,2,3,4,5] 
+
+
+
+
+
+
   </script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let amount=Number(prompt(`
+      ATM Action Menu
+      1 Check Balance
+      2 WithDraw
+      3 Deposit
+      4 Exit
+    `))
+
+    switch (amount) {
+      case 1:
+        console.log("Check Balance");
+        
+        break;
+
+      case 2:
+        console.log("WithDraw");
+        
+        break;  
+      case 3:
+        console.log("Deposit");
+        
+        break;
+      
+      case 4:
+        console.log("Exit");
+        
+        break;   
+      default:
+        console.log("Invalid");
+        
+        break;
+    }
+  </script>
+</body>
+</html>

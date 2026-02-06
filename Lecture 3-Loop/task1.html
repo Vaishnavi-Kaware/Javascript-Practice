@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let num=7
+    // if(!(num%2==0)){
+    //   console.log("prime");
+      
+    // }
+
+    // let userInput=Number(prompt("Enter the number:--"))
+    // let isPrime=true;
+    // for(let i=2; i<userInput; i++){
+    //   if(userInput%i==0){
+    //     //console.log(userInput,i);
+    //     isPrime=false
+    //     break;
+    //   }
+      
+    // }
+    // if (isPrime) {
+    //   console.log("prime");
+      
+    // } else {
+    //   console.log("not prime");
+      
+    // }
+
+
+
+
+    let userInput=Number(prompt("Enter the number:--"))
+    let midValue=parseInt(userInput/2)
+    let isPrime=true;
+    for(let i=2; i<=midValue; i++){
+      if(userInput%i==0){
+        //console.log(userInput,i);
+        isPrime=false
+        break;
+      }
+      
+    }
+    if (isPrime) {
+      console.log("prime");
+      
+    } else {
+      console.log("not prime");
+      
+    }
+
+  </script>
+</body>
+</html>

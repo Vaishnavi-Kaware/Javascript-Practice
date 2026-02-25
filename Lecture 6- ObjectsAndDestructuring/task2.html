@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // How do you extract the city from this object?
+
+    const user={
+      name:"Vaishnavi",
+      address:{
+        city:"Pune"
+      }
+    };
+    let{address:{city}}=user
+    console.log(city);
+    
+
+  </script>
+</body>
+</html>

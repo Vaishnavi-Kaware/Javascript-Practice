@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let msg="    Vaishnavi       ";
+    console.log(msg);
+    
+    let a=msg.trim();
+    console.log(a);
+    
+    // let password=prompt("Set your password");
+    // let pass=password.trim()
+    // console.log(pass);
+    
+    let str ="Vaishnavi"
+    let newStr=str.toUpperCase();
+    console.log(newStr);
+    
+    let newStr2=str.toLowerCase();
+    console.log(newStr2);
+
+    let ab="Vaishnavi" // method with arg
+    let c= ab.indexOf("v")
+    console.log(c);
+    
+    let cd="        hey " //method chaining left to right
+    let newcd=cd.trim().toUpperCase();
+    console.log(newcd);
+    
+    //Slice str.slice(start,end)
+    //Ending insdex non-inclusive
+
+    let de="LOverndfkdcs"
+    let vv1=de.slice(0) 
+    let vv=de.slice(0,5) 
+    let vv2=de.slice(0,de.length) 
+    console.log(vv);
+     console.log(vv1);
+     console.log(vv2);
+
+     let msg2="Vaishnavi"
+     console.log(msg2.slice(-2));//9-2=>7 o/p=vi
+     
+    //replace
+    
+    let msg3="Hello";
+    let newMsg3=msg3.replace("l","h")//only first occurrence replace
+    console.log(newMsg3);
+    
+
+    //repeat
+    let msg4="Vaishnavi"
+    let newMsag4=msg4.repeat(3)
+    console.log(newMsag4);
+    
+
+
+
+
+  </script>
+</body>
+</html>

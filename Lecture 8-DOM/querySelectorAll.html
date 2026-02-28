@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>querySelectorAll</title>
+</head>
+<body>
+  <u>
+      <li>Html</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>React</li>
+  </u>
+
+  <script>
+    let allLiElement=document.querySelectorAll("li")
+    console.log(allLiElement);
+
+  //  console.log(allLiElement[0].innerText);
+  //  console.log(allLiElement[2].innerHTML);//one at a time
+
+  allLiElement.forEach((items,index)=>{
+     //console.log(items.innerHTML);
+     console.log(index,items.innerText);
+     
+  })//acess at a time all
+
+
+   
+    
+  
+
+
+   
+   
+    
+  </script>
+</body>
+</html>

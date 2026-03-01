@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1{
+      text-align: center;
+    }
+    
+    #btn1{
+      text-align: center;
+    }
+    #btn2{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="count">0</h1>
+  <button id="btn1">Increase</button>
+  <button id="btn2">Decrease</button>
+</body>
+
+<script>
+  //Number Counter
+  let count=0;
+  let buttonIncreaseElement=document.querySelector("#btn1")
+  let headingElement=document.querySelector("h1")
+  buttonIncreaseElement.addEventListener("click",()=>{
+   
+      count=count+1;
+      headingElement.innerHTML=count
+    
+  })
+
+  let buttonDecreaseElement=document.querySelector("#btn2")
+   buttonDecreaseElement.addEventListener("click",()=>{
+    
+      count=count-1;
+      headingElement.innerHTML=count
+    
+  })
+
+//   buttonDecreaseElement.addEventListener("click", () => {
+//   if (count > 0) {
+//     count--;
+//     headingElement.innerText = count;
+//   }
+// });
+</script>
+</html>

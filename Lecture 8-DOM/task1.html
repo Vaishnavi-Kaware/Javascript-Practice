@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">Save</button>
+  <h1>Welcome to Task-01</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis in dolorem illum sed harum rerum modi ad voluptatem. Fuga cum eveniet dolor cumque officia officiis ratione libero quas consequatur facere.</p>
+
+  <script>
+    //Swapping content
+
+    let buttonElement=document.querySelector("#btn")
+    console.log(buttonElement);
+    let headingElement=document.querySelector("h1")
+    let paraElement=document.querySelector("p")
+
+    buttonElement.addEventListener("click",()=>{
+      headingElementData=headingElement.innerHTML;
+      paraElementData=paraElement.innerHTML
+
+      headingElement.innerHTML=paraElementData
+      paraElement.innerHTML=headingElementData
+    })
+
+    // buttonElement.addEventListener("click",()=>{
+    //   if(headingElement.innerHTML=="Welcome to Task-01"){
+    //     headingElement.innerText="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis in dolorem illum sed harum rerum modi ad voluptatem. Fuga cum eveniet dolor cumque officia officiis ratione libero quas consequatur facere."
+    //     paraElement.innerText="Welcome to Task-01"
+    //   }
+    //   else{
+    //   headingElement.innerHTML="Welcome to Task-01"
+    //    paraElement.innerText="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis in dolorem illum sed harum rerum modi ad voluptatem. Fuga cum eveniet dolor cumque officia officiis ratione libero quas consequatur facere."
+    //   }
+    // })
+  </script>
+</body>
+</html>

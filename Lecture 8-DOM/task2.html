@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to Task-02</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione impedit natus. Voluptas veniam expedita sit placeat maiores, iusto consequuntur praesentium laboriosam facere ducimus exercitationem magni dolorem ut porro fuga.</p>
+  <button>CSS Style</button>
+</body>
+
+<script>
+//InlineCss 
+  let buttonElement=document.querySelector("button")
+  console.log(buttonElement);
+  let paraElement=document.querySelector("p")
+  console.log(paraElement);
+  
+  
+  buttonElement.addEventListener("click",()=>{
+    paraElement.style.color="Red"
+    paraElement.style.backgroundColor="Yellow"
+    //document.body.style.backgroundColor = "blue";
+    //document.body.style.backgroundColor = "";//It removes inline styling and restores previous/default styling.
+    //document.body.style.backgroundColor = null;//Also removes inline style
+    paraElement.style.fontSize="18px"
+    if (document.body.style.backgroundColor=="blue") {
+      document.body.style.backgroundColor="white"
+      
+    } else {
+      document.body.style.backgroundColor="blue"
+    }
+  })
+</script>
+</html>

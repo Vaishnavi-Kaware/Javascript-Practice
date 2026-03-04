@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="background-color: aquamarine">Wlecome to Manipulating Style with Attribute</h1>
+  <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sunt provident necessitatibus quis magni illum temporibus dolorem! Harum necessitatibus quo nesciunt cumque sapiente, labore eius autem, blanditiis amet, architecto excepturi?</p>
+</body>
+<script>
+  let headingElement=document.querySelector('h1');
+  console.log( headingElement.style);
+  console.dir(headingElement)
+
+  headingElement.style.color='purple'
+  console.log(headingElement.style.backgroundColor);
+  console.log(headingElement.getAttribute("style"));
+
+  let paraElement=document.getElementById("para1")
+  paraElement.setAttribute("id","para2")
+   console.log(paraElement.getAttribute("id"));
+   paraElement.setAttribute("style","font-size:30px")
+    
+  
+</script>
+</html>

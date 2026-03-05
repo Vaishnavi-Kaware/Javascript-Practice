@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <h3>About</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio necessitatibus enim est ipsum vel laboriosam a id minus incidunt pariatur, sint praesentium eius? Doloribus ipsum nemo placeat veniam obcaecati.</p>
+  <button>Click Me</button>
+
+  <script>
+    let paraElement=document.querySelector("p")
+    let btnElement=document.querySelector("button")
+    //paraElement.insertAdjacentElement("afterbegin",btnElement)
+
+    //paraElement.insertAdjacentElement("afterend",btnElement)
+
+    paraElement.insertAdjacentElement("beforebegin",btnElement)
+
+    //paraElement.insertAdjacentElement("beforeend",btnElement)
+
+    //Remove Elements
+    let bodyElement=document.querySelector("body")
+    bodyElement.removeChild(btnElement)
+
+    paraElement.insertAdjacentElement("beforebegin",btnElement)
+    btnElement.remove();
+  </script>
+</body>
+</html>

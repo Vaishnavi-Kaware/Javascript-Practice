@@ -5,9 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  .green{
+    color: rgb(255, 0, 179);
+    
+  }
+  .underline{
+    text-decoration: underline black wavy;
+  }
+  .backgroundColor{
+    background-color: darkcyan;
+  }
+
+  .box{
+    border: 0.25px solid black;
+    background-color: lightpink;
+    width: 200px;
+    padding: 1rem;
+  }
+  .yellowBg{
+    background-color: yellowgreen;
+  }
+</style>
 <body>
   <h1 style="background-color: aquamarine">Wlecome to Manipulating Style with Attribute</h1>
   <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sunt provident necessitatibus quis magni illum temporibus dolorem! Harum necessitatibus quo nesciunt cumque sapiente, labore eius autem, blanditiis amet, architecto excepturi?</p>
+
+  <div class="box">
+    <h4>Publication Info</h4>
+    <ul>
+      <li><a href="#" class="boxLink">Publisher</a></li>
+      <li><a href="#" class="boxLink">First Appearance</a></li>
+      <li>
+        Created by
+        <ul>
+          <li><a href="#" class="boxLink">Stan Lee</a></li>
+          <li><a href="#" class="boxLink">Steve Ditko</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
 </body>
 <script>
   let headingElement=document.querySelector('h1');
@@ -22,7 +61,60 @@
   paraElement.setAttribute("id","para2")
    console.log(paraElement.getAttribute("id"));
    paraElement.setAttribute("style","font-size:30px")
-    
+   
   
+   let linksElement = document.querySelectorAll(".box a")
+   console.log(linksElement);
+   
+   for(let i=0; i<linksElement.length; i++ ){
+    linksElement[i].style.color="Green";
+   }
+
+   for(link of linksElement){   //Only values needed
+    link.style.color="purple"
+   }
+  
+   linksElement.forEach(item =>{
+    item.style.color="black" //style-> only used for inline css 
+   });
+
+   linksElement.forEach(function(value,index){
+    console.log(index,value);
+    
+   })
+   
+   //classList
+
+   console.log(headingElement);
+   console.log(headingElement.classList);
+   
+   console.log(headingElement.getAttribute("style"));
+   headingElement.style.color = "";
+   console.log(headingElement.getAttribute("style"));
+   
+   headingElement.classList.add("green")
+   headingElement.classList.add("underline")
+   
+   headingElement.classList.remove("green")
+   console.log(headingElement.classList);
+   headingElement.setAttribute("class","green")
+  console.log(headingElement.classList);
+  console.log(headingElement.classList.contains("green"));
+
+  console.log(headingElement.classList);
+  
+  headingElement.style.backgroundColor=""
+  headingElement.classList.toggle("backgroundColor")
+  console.log(headingElement.classList);
+  headingElement.classList.toggle("green")
+  headingElement.classList.toggle("underline")
+  console.log(headingElement.classList.toggle("underline"));//remove underline
+  
+
+  let boxElement=document.querySelector(".box")
+  console.log(boxElement.classList);
+  boxElement.classList.add("yellowBg")
+   
+
 </script>
 </html>

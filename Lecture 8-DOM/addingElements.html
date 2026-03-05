@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reiciendis laudantium quidem magnam facere aliquid molestias laborum ipsum recusandae ut minima in, ratione quaerat, dolorum velit quis. Omnis, officiis molestiae!</p>
+
+  <h4>About</h4>
+  <p id="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit odio iusto laudantium deleniti ea ipsa qui ab a quo porro voluptates nemo vitae nam dicta eos aspernatur, quia veritatis optio.</p>
+  <script>
+    
+    console.log(document.createElement('p'));
+    
+    let paraElement=document.createElement("h1")
+    paraElement.innerText="Adding Elements on page"
+    let bodyElement=document.querySelector("body")
+    bodyElement.appendChild(paraElement)
+
+    let btn=document.createElement("button")
+    btn.innerHTML="Click Me!"
+    bodyElement.appendChild(btn)
+
+    console.log(paraElement.textContent);
+    paraElement.append("this is new text")
+    paraElement.append(btn)
+
+
+    let h3Element=document.createElement("h3")
+    h3Element.innerHTML="Adding Elements on page"
+    bodyElement.append(h3Element)
+    let newPara=document.querySelector("#para1")
+    newPara.prepend(h3Element) //Adds at beginning.
+
+    let h2Element=document.createElement("h2")
+    h2Element.innerHTML="Welcome"
+    h3Element.before(h2Element) //Adds before element.
+
+    let h2Element2=document.createElement("h2")
+    h2Element2.innerHTML="Thank You"
+    btn.after(h2Element2)
+
+    let paraElement3=document.querySelector("#para2")
+    let h2Element3=document.createElement("h2")
+    h2Element3.innerText="hellooooooo"    
+    //paraElement3.insertAdjacentElement("beforebegin", h2Element3)
+    paraElement3.insertAdjacentElement("afterend", h2Element3)
+
+    
+
+  </script>
+</body>
+</html>

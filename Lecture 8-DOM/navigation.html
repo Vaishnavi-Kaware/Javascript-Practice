@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation</title>
+</head>
+<style>
+  .green{
+    color: rgb(255, 0, 179);
+    
+  }
+  .underline{
+    text-decoration: underline black wavy;
+  }
+  .backgroundColor{
+    background-color: darkcyan;
+  }
+
+  .box{
+    border: 0.25px solid black;
+    background-color: lightpink;
+    width: 200px;
+    padding: 1rem;
+  }
+  .yellowBg{
+    background-color: yellowgreen;
+  }
+</style>
+<body>
+  <h1>Spider Man</h1>
+  <img src="../assets/img.jfif" alt="Spider Man in red and blue costume swinging between city buildings at night, with skyscrapers and city lights visible in the background">
+  <h3>Wlecome to Manipulating Style with Attribute</h3>
+  <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sunt provident necessitatibus quis magni illum temporibus dolorem! Harum necessitatibus quo nesciunt cumque sapiente, labore eius autem, blanditiis amet, architecto excepturi?</p>
+
+  <div class="box">
+    <h4>Publication Info</h4>
+    <ul>
+      <li><a href="#" class="boxLink">Publisher</a></li>
+      <li><a href="#" class="boxLink">First Appearance</a></li>
+      <li>
+        Created by
+        <ul>
+          <li><a href="#" class="boxLink">Stan Lee</a></li>
+          <li><a href="#" class="boxLink">Steve Ditko</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <script>
+    let h4Element = document.querySelector("h4")
+    console.log(h4Element.parentElement);
+    console.log(h4Element.children);
+    let boxElement=document.querySelector(".box")
+    console.log(boxElement.children);
+    console.log(boxElement.childElementCount);
+    let ulElement=document.querySelector("ul")
+    console.log(ulElement);
+    console.log(ulElement.children);
+    console.log(ulElement.children[1]);
+     console.log(ulElement.children[1].previousElementSibling);
+   console.log(ulElement.children[1].nextElementSibling);
+    
+    let imgElement = document.querySelector("img");
+    console.log(imgElement.previousElementSibling);
+    imgElement.previousElementSibling.style.color="green"
+    
+    
+  </script>
+</body>
+</html>

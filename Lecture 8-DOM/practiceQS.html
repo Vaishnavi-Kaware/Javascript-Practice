@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<style>
+.red{
+    color: red
+  }
+ 
+  .blue{
+    color: blue;
+  }
+
+  .box{
+    border: 0.25px solid black;
+    background-color: pink ;
+  }
+  .btn{
+    background-color: blue;
+    color: white;
+  }
+  </style>
+
+<body>
+  <button id="btn">Click Me !</button>
+  <script>
+    let paraElement=document.createElement("p")
+    paraElement.innerText="Hey, I'm red!"
+    document.querySelector("body").append(paraElement)
+    paraElement.classList.add("red")
+
+    let h3Element=document.createElement("h3")
+    h3Element.innerHTML="Hey I'm Blue"
+    document.querySelector("body").append(h3Element)
+    h3Element.classList.add("blue")
+    
+    let divElement=document.createElement("div")
+    let h1Element=document.createElement("h1")
+    let paraElement2=document.createElement("p")
+
+    h1Element.innerHTML="I am in div"
+    paraElement2.innerHTML="Me <b> too </b>"
+    divElement.append(h1Element)//show inspect at the end script because append add the elemet end
+   // h1Element.style.color="purple"
+    divElement.append(paraElement2)
+
+    divElement.classList.add("box")
+    document.querySelector("body").append(divElement)
+
+    //Access the button using querySelector and its ID. Then, change the button's background colour to blue and its text colour to white.
+
+    let btnElement=document.querySelector("#btn")
+    btnElement.classList.add("btn")
+
+    //Add the following attributes to the elements: change the placeholder value of the input to 'username' and change the ID of the button to 'btn'.
+
+    //  Create elements
+let inputElement = document.createElement("input");
+let buttonElement = document.createElement("button");
+
+//  Set button text
+buttonElement.innerText = "Click me";
+
+//  Add attributes
+
+//  change placeholder
+inputElement.setAttribute("placeholder", "username");
+
+//  change button id
+buttonElement.setAttribute("id", "btn");
+
+//  Add on page
+document.body.append(inputElement, buttonElement);
+
+//inputElement.placeholder = "username";
+//buttonElement.id = "btn";
+
+  </script>
+</body>
+</html>

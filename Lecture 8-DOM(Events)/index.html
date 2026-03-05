@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+</head>
+<body>
+  <button 
+   onclick="console.log('Button was clicked'); console.log('Button was clickedddd') "> Click Me</button><!--Inline event -->
+
+   <button id="btn">Click Me!</button>
+</body>
+<script>
+   let btn=document.querySelector("#btn")
+  // btn.onclick=function(){
+  //   console.log("Button");
+    
+  // }
+
+  function sayHello(){
+    alert("Hello")
+  }
+  // btn.onclick=sayHello;
+
+let btns=document.querySelectorAll("button")
+for(btn of btns){
+  // btn.onclick=sayHello;//only one function run
+  // // btn.onmouseenter=()=>{
+  // //   console.log("onmouseenter event"); 
+  // // }
+
+  // btn.onclick=sayName
+
+  //btn.addEventListener("click",sayHello)//used for multiple function run
+  btn.addEventListener("mouseenter",sayName)
+  btn.addEventListener("dblclick",function(){
+    console.log("Double click");
+    
+  })
+}
+
+function sayName(){
+  console.log("Vaishnavi");
+  
+}
+</script>
+</html>

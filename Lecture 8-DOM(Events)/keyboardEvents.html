@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input type="text" placeholder="enter name">
+  <br><br>
+  <button>Click Me</button>
+</body>
+<script>
+  let inp=document.querySelector("input")
+  
+  // inp.addEventListener("keydown",function(){
+  //   console.log("Key was pressed");
+    
+  // })
+
+  inp.addEventListener("keyup",function(event){
+    console.log("key =",event.key);
+    console.log("code =",event.code);
+    
+    console.log("Key was released");
+    
+  })
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus molestiae possimus a fuga deserunt consequatur! Quod suscipit aspernatur vitae blanditiis! Ipsum, esse dolorem aperiam quisquam aspernatur debitis reiciendis adipisci?</p>
+  <button>Click Me!!</button>
+</body>
+
+<script>
+  let btn=document.querySelector("button")
+  btn.addEventListener("click",function (){
+    console.log(this.innerText); //this --which element triggered event
+    this.style.backgroundColor="pink"
+    
+  })
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/action">
+  <input type="text" placeholder="name">
+  <br><br>
+  <button>submit</button>
+    </form>
+  <script>
+    let form=document.querySelector("form")
+
+    // form.addEventListener("submit",()=>{
+    //   console.log("submit");
+
+
+    // })
+
+    let user=document.querySelector("input")
+    user.addEventListener("change",function(event){
+      event.preventDefault();
+      console.log(" change event");
+      console.log("final value = ",this.value);
+      
+      
+    })
+
+     let user2=document.querySelector("input")
+    user2.addEventListener("input",function(event){
+      event.preventDefault();
+      console.log("input event");
+      console.log("final value = ",this.value);
+      
+      
+    })
+  </script>
+</body>
+</html>
